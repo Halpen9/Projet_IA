@@ -107,7 +107,7 @@ cd votre-dossier-dames/java/Dame
 
 ### Compilation
 ```bash
-cd "[L'emplacement du dossier]"
+cd "[L'emplacement du dossier\Projet_IA\java\Dame]
 javac *.java
 ```
 
