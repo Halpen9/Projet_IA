@@ -1,4 +1,6 @@
- if(profile=="Débutant") {
+Les anciens profils de jeu.
+
+if(profile=="Débutant") {
             // Joue de manière simple, privilégie le matériel
             // Comprend peu les concepts positionnels avancés
             w.put("material", 100.0);
