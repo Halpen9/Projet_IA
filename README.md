@@ -233,10 +233,10 @@ Ratio élagage = (nodesVisited) / (b^depth théorique) :
 | Profil | Style | Force | Caractéristiques |
 |--------|-------|-------|------------------|
 | Perdant | Matériel simple | ⭐ | Sous-estime les heuristiques puissantes |
-| Intermédiaire | Équilibré basique | ⭐⭐ | Comprend les bases tactiques |
+| Intermédiaire | Équilibré basique | ⭐⭐⭐| Comprend les bases tactiques |
 | Expert | Équilibre parfait | ⭐⭐⭐⭐ | Balance tactique/stratégie |
-| Agressif | Attaque/initiative | ⭐⭐⭐ | Sacrifices, tempo élevé |
-| Défensif | Sécurité maximale | ⭐⭐⭐⭐ | Structure solide, contre-attaque |
+| Agressif | Attaque/initiative | ⭐⭐⭐⭐| Sacrifices, tempo élevé |
+| Défensif | Sécurité maximale | ⭐⭐ | Structure solide, contre-attaque |
 | Poids Random | Aléatoire pondéré | ⭐⭐⭐ | Style variable chaque partie |
 | Joue Random | Hasard pur | ⭐ | Aléatoire complet, pas de stratégie |
 | Équilibre | Universel | ⭐⭐⭐ | Joue selon les heuristiques brutes |
