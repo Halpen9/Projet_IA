@@ -1,0 +1,106 @@
+ if(profile=="Débutant") {
+            // Joue de manière simple, privilégie le matériel
+            // Comprend peu les concepts positionnels avancés
+            w.put("material", 100.0);
+            w.put("central", 3.0);        // ↓ Comprend mal l'importance du centre
+            w.put("structure", 2.0);       // ↓ Ignore la structure
+            w.put("mobility", 8.0);        // ↑ Voit les coups possibles mais mal
+            w.put("Dame_activity", 15.0);  // ↓ Sous-estime les dames
+            w.put("promotion", 5.0);       // ↓ Ne planifie pas la promotion
+            w.put("safety", 5.0);          // ↓ Laisse des pièces en l'air
+            w.put("tempi", 0.5);           // ↓ Joue lentement
+            w.put("locks", 1.0);           // ↓ Tombe dans les pièges de coin
+            
+            } 
+        else if(profile=="Intermédiaire") {
+            // Équilibré, comprend les bases tactiques
+            w.put("material", 100.0);
+            w.put("central", 10.0);
+            w.put("structure", 15.0);
+            w.put("mobility", 18.0);
+            w.put("Dame_activity", 45.0);
+            w.put("promotion", 12.0);
+            w.put("safety", 20.0);
+            w.put("tempi", 3.0);
+            w.put("locks", 8.0);
+        }
+            
+        else if(profile=="Expert") {
+            // Très fort, équilibre parfait entre tactique et stratégie
+            w.put("material", 100.0);
+            w.put("central", 18.0);
+            w.put("structure", 25.0);
+            w.put("mobility", 28.0);
+            w.put("Dame_activity", 85.0);
+            w.put("promotion", 30.0);
+            w.put("safety", 35.0);
+            w.put("tempi", 5.0);
+            w.put("locks", 15.0);
+        }
+            
+        else if (profile=="Agressif") {
+            // Sacrifie la sécurité pour l'attaque et l'initiative
+            // Pousse les pions, active les dames rapidement
+            w.put("material", 100.0);
+            w.put("central", 25.0);        // ↑ Contrôle le centre agressivement
+            w.put("structure", 8.0);       // ↓ Accepte de casser sa structure
+            w.put("mobility", 35.0);       // ↑ Veut beaucoup d'options d'attaque
+            w.put("Dame_activity", 95.0);  // ↑ Dames très actives
+            w.put("promotion", 50.0);      // ↑ Force la promotion
+            w.put("safety", 12.0);         // ↓ Prend des risques
+            w.put("tempi", 10.0);          // ↑ Joue vite, gagne du tempo
+            w.put("locks", 3.0);           // ↓ S'en fiche des blocages
+        }
+            
+        else if (profile=="Défensif") {
+            // Sécurité maximale, structure solide, contre-attaque
+            w.put("material", 100.0);
+            w.put("central", 12.0);        // Contrôle modéré
+            w.put("structure", 45.0);      // ↑ Structure impeccable
+            w.put("mobility", 20.0);       // ↑ Garde des options de repli
+            w.put("Dame_activity", 50.0);  // Dames moins exposées
+            w.put("promotion", 10.0);      // ↓ Pas pressé de promouvoir
+            w.put("safety", 50.0);         // ↑ Sécurité maximale
+            w.put("tempi", 1.0);           // ↓ Joue lentement et sûrement
+            w.put("locks", 25.0);          // ↑ Évite tous les pièges
+        }
+            
+        else if (profile=="Positionnel") {
+            // Style Karpov : structure, contrôle, prophylaxie
+            // Gagne par étouffement progressif
+            w.put("material", 100.0);
+            w.put("central", 30.0);        // ↑ Contrôle spatial maximal
+            w.put("structure", 40.0);      // ↑ Structure parfaite
+            w.put("mobility", 15.0);       // Limite la mobilité adverse
+            w.put("Dame_activity", 60.0);  // Dames bien placées mais pas risquées
+            w.put("promotion", 20.0);      // Planifie à long terme
+            w.put("safety", 35.0);         // Sécurité importante
+            w.put("tempi", 2.0);           // Pas pressé
+            w.put("locks", 30.0);          // ↑ Crée des blocages stratégiques
+        }
+            
+        else if (profile=="Tactique") {
+            // Style Tal : complications, sacrifices, calcul concret
+            w.put("material", 100.0);
+            w.put("central", 15.0);
+            w.put("structure", 5.0);       // ↓ Structure cassée = complications
+            w.put("mobility", 40.0);       // ↑ Maximum de menaces
+            w.put("Dame_activity", 100.0); // ↑ Dames ultra-actives
+            w.put("promotion", 45.0);      // ↑ Force les décisions
+            w.put("safety", 8.0);          // ↓ Accepte les sacrifices
+            w.put("tempi", 12.0);          // ↑ Tempo = initiative
+            w.put("locks", 2.0);           // S'en fiche
+        }
+            
+        else if (profile=="Équilibré") {
+            // Joue selon la position, pas de faiblesse
+            w.put("material", 100.0);
+            w.put("central", 20.0);
+            w.put("structure", 20.0);
+            w.put("mobility", 20.0);
+            w.put("Dame_activity", 70.0);
+            w.put("promotion", 20.0);
+            w.put("safety", 25.0);
+            w.put("tempi", 5.0);
+            w.put("locks", 12.0);
+        }
